@@ -71,6 +71,13 @@ body {
     background-color: rgb(215, 63, 63);
 }
 
+.icon-placeholder-big {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: rgb(215, 63, 63);
+}
+
 .subheader {
     background-color: white;
 
@@ -79,6 +86,19 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
+    gap: 24px;
+    padding: 0px 32px;
+}
+
+.subheader-greeting {
+    margin-right: auto;
+
+}
+
+.subheader-username {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 4px;
 }
 
 .content {
@@ -136,6 +156,21 @@ body {
 
     width: 440px;
 }
-.bell {
+
+.apply-margin {
     margin-left: auto;
+}
+
+
+.small-text {
+    font-weight: 700;
+    font-size: 0.8rem;
+}   
+
+.icon-button {
+    border: white;
+    background-color: white;
+}
+.icon-button:hover {
+    cursor: pointer;
 }
