@@ -4,6 +4,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -12,7 +14,7 @@ body {
     grid-template: 80px 80px 700px / 1fr 4fr;
 
     height: 100%;
-    padding: 16px;
+
     box-sizing: border-box;
 }
 
@@ -37,7 +39,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
 }
 
 .sidebar a {
@@ -45,6 +47,35 @@ body {
     text-decoration: none;
 }
 
+.sidebar img {
+    width: 24px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(64deg) brightness(105%) contrast(105%);
+}
+/* 
+.sidebar img:hover:not(.big-image) {
+    cursor: pointer;
+} */
+
+.sidebar .big-image {
+    width: 50px;
+}
+
+.dashboard {
+    display: flex;
+
+    font-weight: 700;
+    font-size: 1.5rem;
+    gap: 8px
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    font-weight: 620;
+    font-size: 1.05rem;
+}
 
 .header {
     background-color: white;
@@ -60,7 +91,8 @@ body {
 }
 
 .name {
-
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 .icon-placeholder {
@@ -90,15 +122,28 @@ body {
     padding: 0px 32px;
 }
 
-.subheader-greeting {
-    margin-right: auto;
-
-}
 
 .subheader-username {
     font-weight: 700;
     font-size: 1.3rem;
     margin-top: 4px;
+}
+
+.button-container {
+    display: flex;
+    gap: 16px;
+}
+
+.subheader .button {
+    border-radius: 20px;
+    background-color: var(--blue-color);
+    color: white;
+    border: none;
+    padding: 8px 0;
+    width: 100px;
+
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .content {
@@ -171,6 +216,6 @@ body {
     border: white;
     background-color: white;
 }
-.icon-button:hover {
+.button:hover, .icon-button:hover {
     cursor: pointer;
 }
